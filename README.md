@@ -2,4 +2,8 @@
 # tz_bank
 
 
-Создать env в api и frontend, согласно env.txt
+Создать .env.example в api и frontend, согласно env.txt
+
+Установить docker, docker-compose.
+
+Развернуть приложение - make init
