@@ -163,18 +163,12 @@ export default {
         {value: false, text: 'Нет'},
         {value: true, text: 'Да'},
       ],
-      showBlock: false,
       max: maxDate
     }
   },
   computed: {
     ...mapGetters(["errors"]),
     ...mapGetters(["processing"]),
-  },
-  watch: {
-    'details.outstanding_loans'(newVal) {
-      if (newVal) this.showBlock = true;
-    }
   },
   methods: {
     onContext(ctx) {

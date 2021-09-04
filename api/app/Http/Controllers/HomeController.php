@@ -208,7 +208,7 @@ class HomeController extends Controller
             if ($check === false) return 0;
         }
         if (!is_null($rule['availability_real_estate'])) {
-            $check = $rule['availability_real_estate'] === (int)$request['availability_real_estate'];
+            $check = $rule['availability_real_estate'] === (bool)$request['availability_real_estate'];
             if ($check === false) return 0;
         }
         if (!is_null($rule['minor_children'])) {
