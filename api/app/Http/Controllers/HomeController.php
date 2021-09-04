@@ -236,11 +236,8 @@ class HomeController extends Controller
                 if ($check === false) return 0;
             }
             if (!is_null($rule['monthly_payment_current_loans_difference_monthly_income_to'])) {
-                if (((int)$request['monthly_income']/(int)$request['monthly_payment_current_loans']) <= (100/$rule['monthly_payment_current_loans_difference_monthly_income_to']) ) {
-                    $check = true;
-                } else{
-                    return 0;
-                }
+                $check = ((int)$request['monthly_income']/(int)$request['monthly_payment_current_loans']) <= (100/$rule['monthly_payment_current_loans_difference_monthly_income_to']);
+                if ($check === false) return 0;
             }
         }
         if ($check) {
