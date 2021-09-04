@@ -176,7 +176,7 @@ class HomeController extends Controller
         ]);
     }
 
-    private function checkAndResult($rule, $years, Request $request): int
+    private function checkAndResult(array $rule, int $years, Request $request): int
     {
         $check = false;
         if (!is_null($rule['age_from'])) {
