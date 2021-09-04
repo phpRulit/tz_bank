@@ -16,7 +16,7 @@ class HomeController extends Controller
             'surname' => 'required|string|max:100',
             'name' => 'required|string|max:100',
             'patronymic' => 'nullable|string|max:100',
-            'sex' => 'required|integer',
+            'sex' => 'required|integer|min:0|max:1',
             'birthday' => 'required|date|after:1900-01-01',
             'minor_children' => 'required|integer|min:0|max:30',
             'family_status' => 'required|integer|min:0|max:1',
