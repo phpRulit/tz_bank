@@ -24,8 +24,8 @@ class HomeController extends Controller
             'type_employment' => 'required|integer|min:0|max:4',
             'availability_real_estate' => 'required|boolean',
             'outstanding_loans' => 'required|boolean',
-            'outstanding_current_loans' => $request['outstanding_loans'] === true ? 'required' : 'nullable' . '|boolean',
-            'monthly_payment_current_loans' => $request['outstanding_loans'] === true ? 'required' : 'nullable' . '|integer|min:0',
+            'outstanding_current_loans' => ($request['outstanding_loans'] === true ? 'required' : 'nullable') . '|boolean',
+            'monthly_payment_current_loans' => ($request['outstanding_loans'] === true ? 'required' : 'nullable') . '|integer|min:0',
         ]);
         if ($v->fails()) {
             return response()->json(['errors' => $v->errors()]);
