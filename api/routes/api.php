@@ -22,7 +22,7 @@ Route::group([
         'prefix' => 'questionnaire',
         'namespace' => 'App\Http\Controllers'
     ], function () {
-        Route::post('get-estimate', 'HomeController@getEstimate');
+        Route::post('get-estimate', 'HomeController@setEstimate');
         Route::post('store', 'HomeController@store');
     });
 

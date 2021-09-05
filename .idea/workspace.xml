@@ -4,6 +4,7 @@
     <list default="true" id="1772ffe4-f127-4877-897f-8e289a29b70c" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/app/Http/Controllers/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/routes/api.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,7 +31,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../005_TZ_BANK" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -52,7 +53,8 @@
       <workItem from="1630657256273" duration="104000" />
       <workItem from="1630732807563" duration="609000" />
       <workItem from="1630735361506" duration="506000" />
-      <workItem from="1630735906288" duration="678000" />
+      <workItem from="1630735906288" duration="3287000" />
+      <workItem from="1630811389213" duration="124000" />
     </task>
     <servers />
   </component>
