@@ -101,70 +101,80 @@ class HomeController extends Controller
         $rules = [ //заданные правила в ТЗ (уже с расширенными полями, чтобы можно было использовать все ответы пользователя)...
             [
                 'age_from' => null, 'age_to' => 18, 'sex' => null, 'family_status' => null,
-                'monthly_income_from' => null, 'monthly_income_to' => null, 'minor_children' => null, 'minor_children_equally' => null, 'minor_children_from' => null, 'minor_children_to' => null,
+                'monthly_income_from' => null, 'monthly_income_to' => null,
+                'minor_children' => null, 'minor_children_equally' => null, 'minor_children_from' => null, 'minor_children_to' => null,
                 'type_employment' => null, 'availability_real_estate' => null,
                 'outstanding_loans' => null, 'outstanding_current_loans' => null, 'monthly_payment_current_loans_difference_monthly_income_to' => null,
                 'estimate' => 5
             ],
             [
                 'age_from' => 30, 'age_to' => null, 'sex' => 1, 'family_status' => 0,
-                'monthly_income_from' => null, 'monthly_income_to' => 25000, 'minor_children' => false, 'minor_children_equally' => null, 'minor_children_from' => null, 'minor_children_to' => null,
+                'monthly_income_from' => null, 'monthly_income_to' => 25000,
+                'minor_children' => false, 'minor_children_equally' => null, 'minor_children_from' => null, 'minor_children_to' => null,
                 'type_employment' => null, 'availability_real_estate' => null,
                 'outstanding_loans' => null, 'outstanding_current_loans' => null, 'monthly_payment_current_loans_difference_monthly_income_to' => null,
                 'estimate' => 2
             ],
             [
                 'age_from' => 30, 'age_to' => null, 'sex' => 1, 'family_status' => 0,
-                'monthly_income_from' => null, 'monthly_income_to' => 30000, 'minor_children' => true, 'minor_children_equally' => null, 'minor_children_from' => null, 'minor_children_to' => null,
+                'monthly_income_from' => null, 'monthly_income_to' => 30000,
+                'minor_children' => true, 'minor_children_equally' => null, 'minor_children_from' => null, 'minor_children_to' => null,
                 'type_employment' => null, 'availability_real_estate' => null,
                 'outstanding_loans' => null, 'outstanding_current_loans' => null, 'monthly_payment_current_loans_difference_monthly_income_to' => null,
                 'estimate' => 3
             ],
             [
                 'age_from' => 26, 'age_to' => null, 'sex' => 0, 'family_status' => 0,
-                'monthly_income_from' => null, 'monthly_income_to' => 22000, 'minor_children' => false, 'minor_children_equally' => null, 'minor_children_from' => null, 'minor_children_to' => null,
+                'monthly_income_from' => null, 'monthly_income_to' => 22000,
+                'minor_children' => false, 'minor_children_equally' => null, 'minor_children_from' => null, 'minor_children_to' => null,
                 'type_employment' => null, 'availability_real_estate' => null,
                 'outstanding_loans' => null, 'outstanding_current_loans' => null, 'monthly_payment_current_loans_difference_monthly_income_to' => null,
                 'estimate' => 2
             ],
             [
                 'age_from' => 26, 'age_to' => null, 'sex' => 0, 'family_status' => 0,
-                'monthly_income_from' => null, 'monthly_income_to' => 28000, 'minor_children' => true, 'minor_children_equally' => null, 'minor_children_from' => 2, 'minor_children_to' => null,
+                'monthly_income_from' => null, 'monthly_income_to' => 28000,
+                'minor_children' => true, 'minor_children_equally' => null, 'minor_children_from' => 2, 'minor_children_to' => null,
                 'type_employment' => null, 'availability_real_estate' => null,
                 'outstanding_loans' => null, 'outstanding_current_loans' => null, 'monthly_payment_current_loans_difference_monthly_income_to' => null,
                 'estimate' => 3
             ],
             [
                 'age_from' => 65, 'age_to' => null, 'sex' => null, 'family_status' => null,
-                'monthly_income_from' => null, 'monthly_income_to' => null, 'minor_children' => null, 'minor_children_equally' => null, 'minor_children_from' => null, 'minor_children_to' => null,
+                'monthly_income_from' => null, 'monthly_income_to' => null,
+                'minor_children' => null, 'minor_children_equally' => null, 'minor_children_from' => null, 'minor_children_to' => null,
                 'type_employment' => null, 'availability_real_estate' => null,
                 'outstanding_loans' => true, 'outstanding_current_loans' => true, 'monthly_payment_current_loans_difference_monthly_income_to' => null,
                 'estimate' => 3
             ],
             [
                 'age_from' => null, 'age_to' => null, 'sex' => null, 'family_status' => null,
-                'monthly_income_from' => null, 'monthly_income_to' => null, 'minor_children' => null, 'minor_children_equally' => null, 'minor_children_from' => null, 'minor_children_to' => null,
+                'monthly_income_from' => null, 'monthly_income_to' => null,
+                'minor_children' => null, 'minor_children_equally' => null, 'minor_children_from' => null, 'minor_children_to' => null,
                 'type_employment' => null, 'availability_real_estate' => null,
                 'outstanding_loans' => true, 'outstanding_current_loans' => true, 'monthly_payment_current_loans_difference_monthly_income_to' => 50,
                 'estimate' => 3
             ],
             [
                 'age_from' => 18, 'age_to' => null, 'sex' => null, 'family_status' => null,
-                'monthly_income_from' => null, 'monthly_income_to' => 15000, 'minor_children' => null, 'minor_children_equally' => null, 'minor_children_from' => null, 'minor_children_to' => null,
+                'monthly_income_from' => null, 'monthly_income_to' => 15000,
+                'minor_children' => null, 'minor_children_equally' => null, 'minor_children_from' => null, 'minor_children_to' => null,
                 'type_employment' => null, 'availability_real_estate' => null,
                 'outstanding_loans' => null, 'outstanding_current_loans' => null, 'monthly_payment_current_loans_difference_monthly_income_to' => null,
                 'estimate' => 2
             ],
             [
                 'age_from' => 18, 'age_to' => 35, 'sex' => null, 'family_status' => null,
-                'monthly_income_from' => null, 'monthly_income_to' => 15000, 'minor_children' => null, 'minor_children_equally' => 1, 'minor_children_from' => null, 'minor_children_to' => null,
+                'monthly_income_from' => null, 'monthly_income_to' => 15000,
+                'minor_children' => null, 'minor_children_equally' => 1, 'minor_children_from' => null, 'minor_children_to' => null,
                 'type_employment' => null, 'availability_real_estate' => null,
                 'outstanding_loans' => null, 'outstanding_current_loans' => null, 'monthly_payment_current_loans_difference_monthly_income_to' => null,
                 'estimate' => 1
             ],
             [
                 'age_from' => 18, 'age_to' => 35, 'sex' => null, 'family_status' => null,
-                'monthly_income_from' => null, 'monthly_income_to' => null, 'minor_children' => null, 'minor_children_equally' => null, 'minor_children_from' => 2, 'minor_children_to' => null,
+                'monthly_income_from' => null, 'monthly_income_to' => null,
+                'minor_children' => null, 'minor_children_equally' => null, 'minor_children_from' => 2, 'minor_children_to' => null,
                 'type_employment' => null, 'availability_real_estate' => null,
                 'outstanding_loans' => null, 'outstanding_current_loans' => null, 'monthly_payment_current_loans_difference_monthly_income_to' => null,
                 'estimate' => 2
